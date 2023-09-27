@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+
+<head>
+     
+  <meta charset="UTF-8" />
+     
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Currency Converter</title>
+     
+  <link rel="stylesheet" href="/currency.css">
+     
+  <link  href="https://fonts.googleapis.com/css?family=Raleway"  rel="stylesheet"/>
+      <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Raleway', sans-serif;
+
+      background-image: url("https://images.unsplash.com/photo-1502920514313-52581002a659?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1767&q=80");
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: #fff;
+      line-height: 1.8;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    #container {
+      margin: 300px auto;
+      max-width: 500px;
+      padding: 20px;
+    }
+
+    .form-wrap {
+      background: #fff;
+      padding: 15px 25px;
+      color: #333;
+    }
+
+    .form-wrap h1,
+    .form-wrap p {
+      text-align: center;
+    }convert
+
+    .form-wrap .form-group {
+      margin-top: 15px;
+    }
+
+    .form-wrap .form-group label {
+      display: block;
+      color: #666;
+    }
+
+    .form-wrap .form-group input {
+      width: 100%;
+      padding: 10px;
+      border: #ddd 1px solid;
+      border-radius: 5px;
+    }
+
+    .form-wrap button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin-top: 20px;
+      background: #49c1a2;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    .form-wrap button:hover {
+      background: #37a08e
+    }
+
+    .drop-list #from,
+    .drop-list #to {
+      width: 100%;
+      padding: 10px;
+      border: #ddd  y6 1px solid;
+      border-radius: 5px;
+    }
+
+    .form-wrap .bottom-text {
+      font-size: 13px;
+      margin-top: 20px;
+      font-size: 15px;
+    }
+  </style>
+   
+</head>
+ 
+
+<body>
+      <div id="container">
+          <div class="form-wrap">
+                <h1>Currency Converter</h1>
+                <form action="/tc" method="post">
+                  <div class="form-group">
+                        <label for="amount">Enter Amount</label>
+                        <input type="number" name="amount" 
+ requiredid="conv" />
+                    </div>
+                  <div class="form-group">
+                      <div class="drop-list">
+                          <label id="id">From</label>
+                          <select name="from" id="from">
+                            <% for (let key of conversionRates) { %>
+          
+                                <option  name="<%= key %>" ><%= key %></option>
+                                <% } %>
+                              </select>
+                        </div>
+                    </div>
+                  <div class="form-group">
+                      <div class="drop-list">
+                          <label for="to">To</label>
+                          <select id="to" name="to">
+                      <% for (let key of conversionRates) { %>
+                        <option  name="<%= key %>" ><%= key %></option>
+                       <% } %>
+                       </select>
+                        </div>
+                    </div>
+                    <button type="submit">submit</button>
+                    <P>The converted Amount is= <%= convert %></P>
+                  </form>
+                 </div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Open+Sans:ital,wght@0,300;1,300&family=Oxygen&family=Playfair+Display&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url("https://images.pexels.com/photos/1525041/pexels-photo-1525041.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+            border: 0;
+            display: flex;
+            height: 1000px;
+            /* flex-direction: row; */
+            justify-content: center;
+            align-items: center;
+        }
+        #box{
+            border: 2px solid rgb(255, 255, 255);
+            height: 600px;
+            width: 600px;
+            display: grid;
+            justify-content: center;
+            background-color: rgba(255, 255, 255, 0.701);
+            border-radius: 20%;
+            box-shadow: 10px 20px 30px grey;
+            align-items: center;
+            grid-template-columns: 300px 300px;
+            grid-template-rows: 300px 300px;
+            grid-gap: 20px;
+            backdrop-filter: blur(10px);
+        }
+        #trans{
+            
+            position: relative;
+            left:50%;
+            
+        }
+        a{
+            justify-self: center;
+        }
+        #name{
+            position: static;
+            color: rgb(0, 0, 0);
+            padding-bottom: 4px;
+            font-family: 'Dancing Script', cursive;
+            font-size: 4em;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="main">
+        <center><div id="name">TravelGuidePro...</div>
+        </center>
+      <div id="box">
+            <a href="/getcurrency" id="money"> <img src="https://cdn3.iconfinder.com/data/icons/global-business-52/64/money-exchange-currency-trade-economy-1024.png" width="140px"   alt="#" srcset=""></a>
+            <a href="/Dweather" id="weather"> <img src="https://th.bing.com/th/id/R.4b45154c3942d9228d8de976cd885a0e?rik=DjHAq5eODEFtZA&riu=http%3a%2f%2fwww.psdgraphics.com%2ffile%2fweather-icon.jpg&ehk=XHFG6nRVxhBiZxOVd1U2hmzOtnJZ7RVFZqFNqw8tx0g%3d&risl=&pid=ImgRaw&r=0" width="150px" srcset=""></a>
+            <a href="/Dtrans"  id="trans" > <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Google_Translate_logo.svg/1200px-Google_Translate_logo.svg.png" width="140px"  alt="#" srcset=""></a>
+      </div>
+    </div>
+</body>
+</html>

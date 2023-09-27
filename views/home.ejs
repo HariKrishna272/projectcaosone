@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+   
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+    
+    
+  @import url('https://fonts.googleapis.com/css2?family=Parisienne&family=Roboto:wght@100&display=swap');
+
+  
+      body {
+        /* background-image: url("https://cdn.pixabay.com/photo/2019/07/08/04/23/traveling-4323759_1280.png"); */
+        background-repeat: no-repeat;
+        background-size: cover;
+        background: black
+    url(http://fc01.deviantart.net/fs71/f/2012/160/b/9/stars_by_paulinemoss-d52un4e.jpg);
+  animation: stars 205s linear alternate;
+        color: #ffffff;
+      }
+      #heading{
+       /* headring part */
+       font-family: 'Parisienne', 'cursive';
+       font-size: 1.8rem; 
+      }
+      #head {
+        font-family: 'Parisienne', 'cursive';
+        font-size: 3rem;
+      }
+      #About {
+        font-size: 2rem;
+      }
+      #content{
+        width: 600px;
+      }
+      #id0{
+        width: 600px; 
+      }
+      #id1{
+        margin-top: 0%;
+      }
+     
+      #block{
+        display: grid;
+        grid-template-columns: 600px 400px ;
+        grid-template-rows:1000px ;
+        gap: 100px;
+      }
+      
+      #block2{
+  
+   
+  position: fixed;
+  right: 0px;
+  top:100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: 100%;
+}
+#box {
+  background: url(https://i.imgur.com/bYSnuNE.jpg?1);
+  background-size: cover;
+  border: 2px solid #000;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  animation: movimiento 5s linear 0s infinite;
+  box-shadow: 0 0 25px RGBA(255, 255, 255, 0.1), -8px -8px 15px #000 inset,
+    2px 2px 25px #000 inset, -45px -45px 25px RGBA(0, 0, 0, 0.5) inset,
+    25px 25px 45px RGBA(0, 0, 0, 0.45) inset;
+  margin: 6em auto;
+  transform: rotateX(6deg) rotateY(6deg) rotateZ(6deg);
+}
+
+@keyframes movimiento {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 355px 0;
+  }
+}
+
+@keyframes stars {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 100%;
+  }
+}
+#nav1{
+    position: sticky;
+    top:0px;
+}
+      
+    </style>
+  </head>
+  <body>
+     <form action="/" method="get">
+    <nav id="nav1" class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" id="head" href="#">Travel Guide Pro</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto" id="About">
+          <a class="nav-link active" href='/Dlogin'>Login &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+            </a>
+          <a class="nav-link" href="/Dsign">&nbsp; &nbsp;Sign up &nbsp; &nbsp; &nbsp;</a>
+          <a class="nav-link" href="#">&nbsp; &nbsp;About Us &nbsp; &nbsp; &nbsp;</a>
+        </div>
+      </div>
+    </nav>
+    <div id="block">
+    <div id="content">
+      <h4 style="color: #ffffff" id="heading"><p>Welcome to Travel Guide Pro!</p></h4>
+      <br />
+      <p  id="id0"  align="justify" >
+         <span  >
+          Travel Guide Pro </span>  is a travel guide that helps you plan your next trip
+          by providing information about the places and hot
+        
+      </p>
+      <p id="id1" >
+        At Travel Guide Pro, we are dedicated to making your travel experience
+        smoother and more enjoyable. We understand that exploring new
+        destinations can be exciting, but it can also come with its fair share
+        of challenges. That's where we come in, offering you a range of
+        essential services to enhance your travel adventure.
+      </p>
+      <div id="id2" >
+        <img id="imag1"   src="r" alt="" srcset="">
+        <span id="heading"> Currency Conversion Made Easy:</span>
+        <p>
+          One of the most daunting aspects of international travel is dealing
+          with foreign currencies. With our user-friendly currency conversion
+          tool, you can say goodbye to the hassle of calculating exchange rates.
+          Whether you're shopping for souvenirs, dining at a local restaurant,
+          or budgeting your expenses, our currency converter ensures you always
+          have the accurate exchange rates at your fingertips.
+        </p>
+      </div>
+      <div id="id3" >
+        <span id="heading">Seamless Language Translation:</span>
+        <p>
+          Don't let language barriers stand in the way of connecting with people
+          from all around the world. Our website offers a robust language
+          translation feature that allows you to communicate effortlessly.
+          Translate menus, signs, and conversations on the fly, making it easier
+          than ever to immerse yourself in the local culture and connect with
+          the people you meet on your journey.
+        </p>
+        
+      </div>
+      <div id="id4" >
+        <span id="heading">Stay Informed with Weather Updates:</span>
+        <p>
+          Planning your day's activities is a breeze with our real-time weather
+          updates. Get the latest information on local weather conditions and
+          forecasts for your chosen destination. Whether you're packing for a
+          sunny day at the beach or preparing for a day of exploration in cooler
+          climates, our weather updates will help you make informed decisions
+          and ensure you're always prepared.
+        </p>
+      </div>
+      <div id="id6" >
+        <p>
+          At Travel Guide Pro, our mission is to be your trusted travel
+          companion, providing the essential tools and information you need to
+          make the most of your adventures around the world. Whether you're a
+          seasoned globetrotter or embarking on your very first trip, we're here
+          to simplify your journey and enhance your travel experience.
+        </p>
+      </div>
+      <div id="id5" >
+        <p>
+          Join us today and let us help you make your next adventure
+          unforgettable! Explore the world with confidence, knowing that Travel
+          Guide Pro has your back every step of the way. Happy travels!
+        </p>
+      </div>
+    </div>
+    
+    <div id="block2">
+        <div id="box"></div>
+    </div>
+  </div>
+  </form>
+  </body>
+</html>
